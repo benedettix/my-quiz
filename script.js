@@ -24,7 +24,9 @@ function generateQuestions() {
 
         checkWinner();
     
-    }
+    }else {
+
+    
 
     buttonNext.style.display = "none";
 
@@ -46,7 +48,7 @@ function generateQuestions() {
         arg.addEventListener('click', nextQuestion);
     })
 
- 
+}
 }
 
 function nextQuestion() {
@@ -75,6 +77,7 @@ function nextQuestion() {
 
 
 function checkWinner() {
+    
     question.innerHTML = "Quiz";
     buttonNext.style.display = "none";
     buttonAgain.style.display = "block";
